@@ -7,4 +7,11 @@ jobs:
       - name: print greeting
         run: echo "Hello world! :) "
       - name: print goodbye
-        run: echo goodbye!
+        run: |
+          echo goodbye!
+          echo "see you again"
+  second-job:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Maow
+        run: echo "Maow"
