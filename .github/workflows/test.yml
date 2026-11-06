@@ -1,0 +1,16 @@
+name: test
+on: push
+  path:
+    - 'second-action/**'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get code
+        uses: actions/checkout@v3
+      - name: install nodeJS
+        uses: action/setup-node@v3
+        with:
+          node-verison: 18
+
+      
