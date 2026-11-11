@@ -15,7 +15,9 @@ jobs:
         with:
           node-version: 18
       - name: npm install
-        run: npm ci
+        run: | 
+          cd second-action
+          npm ci
       - name: run tests
         run: npm test
 
