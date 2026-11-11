@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'second-action/**'
+      - '.github/workflows/test.yml'
 jobs:
   test:
     runs-on: ubuntu-latest
